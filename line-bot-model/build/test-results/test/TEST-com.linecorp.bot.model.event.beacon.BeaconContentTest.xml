@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:40" hostname="Lenovo-PC" time="0.047">
+  <properties/>
+  <testcase name="beaconContentEqualityTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.04"/>
+  <testcase name="beaconContentArrayProtectedTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.007"/>
+=======
 <testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:12:03" hostname="Ignaviers-MacBook-Pro.local" time="0.011">
   <properties/>
   <testcase name="beaconContentEqualityTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.007"/>
   <testcase name="beaconContentArrayProtectedTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.004"/>
+>>>>>>> master
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

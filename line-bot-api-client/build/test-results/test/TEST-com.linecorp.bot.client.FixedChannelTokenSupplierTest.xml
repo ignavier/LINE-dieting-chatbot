@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.client.FixedChannelTokenSupplierTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:33" hostname="Lenovo-PC" time="0.025">
+  <properties/>
+  <testcase name="constructedInstanceAlwaysNonNullTest" classname="com.linecorp.bot.client.FixedChannelTokenSupplierTest" time="0.001"/>
+  <testcase name="getTest" classname="com.linecorp.bot.client.FixedChannelTokenSupplierTest" time="0.024"/>
+=======
 <testsuite name="com.linecorp.bot.client.FixedChannelTokenSupplierTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:11:59" hostname="Ignaviers-MacBook-Pro.local" time="0.005">
   <properties/>
   <testcase name="constructedInstanceAlwaysNonNullTest" classname="com.linecorp.bot.client.FixedChannelTokenSupplierTest" time="0.0"/>
   <testcase name="getTest" classname="com.linecorp.bot.client.FixedChannelTokenSupplierTest" time="0.004"/>
+>>>>>>> master
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

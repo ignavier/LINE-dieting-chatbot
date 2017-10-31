@@ -1,4 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.client.LineMessagingClientImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:35" hostname="Lenovo-PC" time="0.088">
+  <properties/>
+  <testcase name="getProfileTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.065"/>
+  <testcase name="pushMessageTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.003"/>
+  <testcase name="leaveRoomTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <testcase name="replyMessageTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <testcase name="getMessageContentTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.008"/>
+  <testcase name="multicastTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <testcase name="leaveGroupTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.003"/>
+  <system-out><![CDATA[]]></system-out>
+=======
 <testsuite name="com.linecorp.bot.client.LineMessagingClientImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:12:00" hostname="Ignaviers-MacBook-Pro.local" time="0.031">
   <properties/>
   <testcase name="getProfileTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.018"/>
@@ -11,5 +23,6 @@
   <system-out><![CDATA[14:12:00.236 [OkHttp http://localhost:54176/...] INFO com.linecorp.bot.client.wire - <-- HTTP FAILED: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:54176
 14:12:00.236 [OkHttp http://localhost:54176/...] INFO com.linecorp.bot.client.wire - <-- HTTP FAILED: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:54176
 ]]></system-out>
+>>>>>>> master
   <system-err><![CDATA[]]></system-err>
 </testsuite>

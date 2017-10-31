@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.model.error.ErrorResponseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:40" hostname="Lenovo-PC" time="0.489">
+  <properties/>
+  <testcase name="complexErrorResponseTest" classname="com.linecorp.bot.model.error.ErrorResponseTest" time="0.482"/>
+  <testcase name="simpleErrorResponseTest" classname="com.linecorp.bot.model.error.ErrorResponseTest" time="0.007"/>
+=======
 <testsuite name="com.linecorp.bot.model.error.ErrorResponseTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:12:02" hostname="Ignaviers-MacBook-Pro.local" time="0.284">
   <properties/>
   <testcase name="complexErrorResponseTest" classname="com.linecorp.bot.model.error.ErrorResponseTest" time="0.281"/>
   <testcase name="simpleErrorResponseTest" classname="com.linecorp.bot.model.error.ErrorResponseTest" time="0.003"/>
+>>>>>>> master
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

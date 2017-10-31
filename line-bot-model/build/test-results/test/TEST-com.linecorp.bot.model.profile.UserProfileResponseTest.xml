@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.model.profile.UserProfileResponseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:41" hostname="Lenovo-PC" time="0.003">
+=======
 <testsuite name="com.linecorp.bot.model.profile.UserProfileResponseTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:12:03" hostname="Ignaviers-MacBook-Pro.local" time="0.003">
+>>>>>>> master
   <properties/>
   <testcase name="test" classname="com.linecorp.bot.model.profile.UserProfileResponseTest" time="0.003"/>
   <system-out><![CDATA[]]></system-out>

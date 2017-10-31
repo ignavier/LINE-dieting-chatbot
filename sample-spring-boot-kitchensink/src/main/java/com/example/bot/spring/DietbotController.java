@@ -312,9 +312,6 @@ public class DietbotController {
 	}
 
 
-	
-
-
 	public DietbotController() {
 		database = new SQLDatabaseEngine();
 		itscLOGIN = System.getenv("ITSC_LOGIN");

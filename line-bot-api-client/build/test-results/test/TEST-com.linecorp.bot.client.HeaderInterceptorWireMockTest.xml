@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.client.HeaderInterceptorWireMockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:33" hostname="Lenovo-PC" time="1.49">
+  <properties/>
+  <testcase name="forChannelTokenSupplier" classname="com.linecorp.bot.client.HeaderInterceptorWireMockTest" time="1.49"/>
+  <system-out><![CDATA[21:46:34.961 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - --> GET http://localhost:62568/v2/bot/message/TEST/content http/1.1
+21:46:34.965 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer 1st
+21:46:34.965 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+21:46:34.966 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - --> END GET
+21:46:35.018 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - --> GET http://localhost:62568/v2/bot/message/TEST/content http/1.1
+21:46:35.018 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer 2nd
+21:46:35.018 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+21:46:35.018 [OkHttp http://localhost:62568/...] INFO com.linecorp.bot.client.wire - --> END GET
+=======
 <testsuite name="com.linecorp.bot.client.HeaderInterceptorWireMockTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:11:59" hostname="Ignaviers-MacBook-Pro.local" time="0.44">
   <properties/>
   <testcase name="forChannelTokenSupplier" classname="com.linecorp.bot.client.HeaderInterceptorWireMockTest" time="0.44"/>
@@ -10,6 +23,7 @@
 14:12:00.232 [OkHttp http://localhost:54176/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer 2nd
 14:12:00.232 [OkHttp http://localhost:54176/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
 14:12:00.232 [OkHttp http://localhost:54176/...] INFO com.linecorp.bot.client.wire - --> END GET
+>>>>>>> master
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

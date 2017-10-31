@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.client.LineMessagingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:35" hostname="Lenovo-PC" time="0.016">
+  <properties/>
+  <testcase name="relativeRequestTest" classname="com.linecorp.bot.client.LineMessagingServiceTest" time="0.016"/>
+  <system-out><![CDATA[21:46:35.250 [MockWebServer 62583] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[62583] starting to accept connections
+21:46:35.256 [Test worker] INFO com.linecorp.bot.client.wire - --> GET http://localhost:62583/CanContainsRelative/v2/bot/profile/USER_TOKEN http/1.1
+21:46:35.256 [Test worker] INFO com.linecorp.bot.client.wire - Authorization: Bearer SECRET
+21:46:35.256 [Test worker] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+21:46:35.256 [Test worker] INFO com.linecorp.bot.client.wire - --> END GET
+21:46:35.259 [Test worker] INFO com.linecorp.bot.client.wire - <-- 200 OK http://localhost:62583/CanContainsRelative/v2/bot/profile/USER_TOKEN (2ms)
+21:46:35.259 [MockWebServer /127.0.0.1:62584] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[62583] received request: GET /CanContainsRelative/v2/bot/profile/USER_TOKEN HTTP/1.1 and responded: HTTP/1.1 200 OK
+21:46:35.259 [Test worker] INFO com.linecorp.bot.client.wire - Content-Length: 116
+21:46:35.259 [Test worker] INFO com.linecorp.bot.client.wire - 
+21:46:35.259 [Test worker] INFO com.linecorp.bot.client.wire - {"displayName":"name","userId":"userId","pictureUrl":"https://line.me/picture_url","statusMessage":"Status message"}
+21:46:35.259 [Test worker] INFO com.linecorp.bot.client.wire - <-- END HTTP (116-byte body)
+21:46:35.263 [MockWebServer 62583] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[62583] done accepting connections: socket closed
+=======
 <testsuite name="com.linecorp.bot.client.LineMessagingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:12:00" hostname="Ignaviers-MacBook-Pro.local" time="0.012">
   <properties/>
   <testcase name="relativeRequestTest" classname="com.linecorp.bot.client.LineMessagingServiceTest" time="0.012"/>
@@ -14,6 +31,7 @@
 14:12:00.347 [Test worker] INFO com.linecorp.bot.client.wire - {"displayName":"name","userId":"userId","pictureUrl":"https://line.me/picture_url","statusMessage":"Status message"}
 14:12:00.347 [Test worker] INFO com.linecorp.bot.client.wire - <-- END HTTP (116-byte body)
 14:12:00.350 [MockWebServer 54191] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[54191] done accepting connections: Socket closed
+>>>>>>> master
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

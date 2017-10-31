@@ -41,7 +41,11 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
+<<<<<<< HEAD
+<div class="counter">0.064s</div>
+=======
 <div class="counter">0.061s</div>
+>>>>>>> master
 <p>duration</p>
 </div>
 </td>
@@ -99,17 +103,21 @@
 </tr>
 <tr>
 <td class="success">templateMessageWithButtonsTemplateTest</td>
+<<<<<<< HEAD
+<td>0.005s</td>
+=======
 <td>0.007s</td>
+>>>>>>> master
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">templateMessageWithCarouselTemplateTest</td>
-<td>0.010s</td>
+<td>0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">templateMessageWithConfirmTemplateTest</td>
-<td>0.018s</td>
+<td>0.017s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
@@ -119,7 +127,11 @@
 </tr>
 <tr>
 <td class="success">videoMessageTest</td>
+<<<<<<< HEAD
+<td>0.010s</td>
+=======
 <td>0.006s</td>
+>>>>>>> master
 <td class="success">passed</td>
 </tr>
 </table>
@@ -127,6 +139,35 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
+<<<<<<< HEAD
+<pre>21:46:41.556 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      VideoMessage(originalContentUrl=https://example.com/original, previewImageUrl=https://example.com/preview)
+21:46:41.560 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;video&quot;,&quot;originalContentUrl&quot;:&quot;https://example.com/original&quot;,&quot;previewImageUrl&quot;:&quot;https://example.com/preview&quot;}
+21:46:41.562 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: VideoMessage(originalContentUrl=https://example.com/original, previewImageUrl=https://example.com/preview)
+21:46:41.563 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      ImagemapMessage(baseUrl=baseUrl, altText=altText, baseSize=ImagemapBaseSize(height=1040, width=1040), actions=[])
+21:46:41.565 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;imagemap&quot;,&quot;baseUrl&quot;:&quot;baseUrl&quot;,&quot;altText&quot;:&quot;altText&quot;,&quot;baseSize&quot;:{&quot;height&quot;:1040,&quot;width&quot;:1040},&quot;actions&quot;:[]}
+21:46:41.569 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: ImagemapMessage(baseUrl=baseUrl, altText=altText, baseSize=ImagemapBaseSize(height=1040, width=1040), actions=[])
+21:46:41.572 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      LocationMessage(title=title, address=address, latitude=135.0, longitude=0.0)
+21:46:41.574 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;location&quot;,&quot;title&quot;:&quot;title&quot;,&quot;address&quot;:&quot;address&quot;,&quot;latitude&quot;:135.0,&quot;longitude&quot;:0.0}
+21:46:41.576 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: LocationMessage(title=title, address=address, latitude=135.0, longitude=0.0)
+21:46:41.579 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      TemplateMessage(altText=ALT, template=ConfirmTemplate(text=text, actions=[URIAction(label=label, uri=http://example.com), MessageAction(label=label, text=text)]))
+21:46:41.588 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;template&quot;,&quot;altText&quot;:&quot;ALT&quot;,&quot;template&quot;:{&quot;type&quot;:&quot;confirm&quot;,&quot;text&quot;:&quot;text&quot;,&quot;actions&quot;:[{&quot;type&quot;:&quot;uri&quot;,&quot;label&quot;:&quot;label&quot;,&quot;uri&quot;:&quot;http://example.com&quot;},{&quot;type&quot;:&quot;message&quot;,&quot;label&quot;:&quot;label&quot;,&quot;text&quot;:&quot;text&quot;}]}}
+21:46:41.593 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: TemplateMessage(altText=ALT, template=ConfirmTemplate(text=text, actions=[URIAction(label=label, uri=http://example.com), MessageAction(label=label, text=text)]))
+21:46:41.593 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      AudioMessage(originalContentUrl=originalUrl, duration=20)
+21:46:41.595 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;audio&quot;,&quot;originalContentUrl&quot;:&quot;originalUrl&quot;,&quot;duration&quot;:20}
+21:46:41.597 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: AudioMessage(originalContentUrl=originalUrl, duration=20)
+21:46:41.599 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      TemplateMessage(altText=ALT, template=CarouselTemplate(columns=[CarouselColumn(thumbnailImageUrl=thumbnail, title=title, text=text, actions=[PostbackAction(label=postback, data=data, text=null)])]))
+21:46:41.603 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;template&quot;,&quot;altText&quot;:&quot;ALT&quot;,&quot;template&quot;:{&quot;type&quot;:&quot;carousel&quot;,&quot;columns&quot;:[{&quot;thumbnailImageUrl&quot;:&quot;thumbnail&quot;,&quot;title&quot;:&quot;title&quot;,&quot;text&quot;:&quot;text&quot;,&quot;actions&quot;:[{&quot;type&quot;:&quot;postback&quot;,&quot;label&quot;:&quot;postback&quot;,&quot;data&quot;:&quot;data&quot;}]}]}}
+21:46:41.607 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: TemplateMessage(altText=ALT, template=CarouselTemplate(columns=[CarouselColumn(thumbnailImageUrl=thumbnail, title=title, text=text, actions=[PostbackAction(label=postback, data=data, text=null)])]))
+21:46:41.608 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      StickerMessage(packageId=123, stickerId=456)
+21:46:41.609 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;sticker&quot;,&quot;packageId&quot;:&quot;123&quot;,&quot;stickerId&quot;:&quot;456&quot;}
+21:46:41.610 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: StickerMessage(packageId=123, stickerId=456)
+21:46:41.611 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      TextMessage(text=TEST)
+21:46:41.612 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;text&quot;,&quot;text&quot;:&quot;TEST&quot;}
+21:46:41.613 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: TextMessage(text=TEST)
+21:46:41.613 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      TemplateMessage(altText=ALT, template=ButtonsTemplate(thumbnailImageUrl=https://example.com, title=title, text=text, actions=[MessageAction(label=label, text=text)]))
+21:46:41.615 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;template&quot;,&quot;altText&quot;:&quot;ALT&quot;,&quot;template&quot;:{&quot;type&quot;:&quot;buttons&quot;,&quot;thumbnailImageUrl&quot;:&quot;https://example.com&quot;,&quot;title&quot;:&quot;title&quot;,&quot;text&quot;:&quot;text&quot;,&quot;actions&quot;:[{&quot;type&quot;:&quot;message&quot;,&quot;label&quot;:&quot;label&quot;,&quot;text&quot;:&quot;text&quot;}]}}
+21:46:41.618 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: TemplateMessage(altText=ALT, template=ButtonsTemplate(thumbnailImageUrl=https://example.com, title=title, text=text, actions=[MessageAction(label=label, text=text)]))
+=======
 <pre>14:12:03.753 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      VideoMessage(originalContentUrl=https://example.com/original, previewImageUrl=https://example.com/preview)
 14:12:03.755 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;video&quot;,&quot;originalContentUrl&quot;:&quot;https://example.com/original&quot;,&quot;previewImageUrl&quot;:&quot;https://example.com/preview&quot;}
 14:12:03.757 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: VideoMessage(originalContentUrl=https://example.com/original, previewImageUrl=https://example.com/preview)
@@ -154,6 +195,7 @@
 14:12:03.807 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Original:      TemplateMessage(altText=ALT, template=ButtonsTemplate(thumbnailImageUrl=https://example.com, title=title, text=text, actions=[MessageAction(label=label, text=text)]))
 14:12:03.810 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - AS JSON:       {&quot;type&quot;:&quot;template&quot;,&quot;altText&quot;:&quot;ALT&quot;,&quot;template&quot;:{&quot;type&quot;:&quot;buttons&quot;,&quot;thumbnailImageUrl&quot;:&quot;https://example.com&quot;,&quot;title&quot;:&quot;title&quot;,&quot;text&quot;:&quot;text&quot;,&quot;actions&quot;:[{&quot;type&quot;:&quot;message&quot;,&quot;label&quot;:&quot;label&quot;,&quot;text&quot;:&quot;text&quot;}]}}
 14:12:03.813 [Test worker] INFO com.linecorp.bot.model.message.MessageJsonReconstructionTest - Reconstructed: TemplateMessage(altText=ALT, template=ButtonsTemplate(thumbnailImageUrl=https://example.com, title=title, text=text, actions=[MessageAction(label=label, text=text)]))
+>>>>>>> master
 </pre>
 </span>
 </div>
@@ -165,7 +207,11 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
+<<<<<<< HEAD
+<a href="http://www.gradle.org">Gradle 3.5</a> at Oct 30, 2017 9:46:41 PM</p>
+=======
 <a href="http://www.gradle.org">Gradle 3.5</a> at Oct 31, 2017 2:12:03 PM</p>
+>>>>>>> master
 </div>
 </div>
 </body>

@@ -1,3 +1,67 @@
+<<<<<<< HEAD
+b21:46:46.740 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+b21:46:47.344 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+a21:46:47.369 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
+  "events": [
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "message",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+
+      },
+      "message": {
+        "id": "325708",
+        "type": "text",
+         "text": "Hello, world"
+	      }
+    },
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "follow",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+	      }
+    }
+  ]
+}
+
+d21:46:47.534 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+a21:46:47.538 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
+  "events": [
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "message",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+
+      },
+      "message": {
+        "id": "325708",
+        "type": "text",
+         "text": "Hello, world"
+	      }
+    },
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "follow",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+	      }
+    }
+  ]
+}
+
+	d21:46:47.550 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+=======
 a14:12:06.828 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
 a14:12:07.122 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
 `14:12:07.127 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
@@ -58,3 +122,4 @@
 }
 
 	c14:12:07.282 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+>>>>>>> master

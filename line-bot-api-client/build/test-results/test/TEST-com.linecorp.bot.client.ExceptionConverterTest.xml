@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.client.ExceptionConverterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:33" hostname="Lenovo-PC" time="0.01">
+  <properties/>
+  <testcase name="convertTest" classname="com.linecorp.bot.client.ExceptionConverterTest" time="0.001"/>
+  <testcase name="convertUnknownExceptionTest" classname="com.linecorp.bot.client.ExceptionConverterTest" time="0.0"/>
+  <testcase name="exceptionInConvertFallbackedTest" classname="com.linecorp.bot.client.ExceptionConverterTest" time="0.008"/>
+=======
 <testsuite name="com.linecorp.bot.client.ExceptionConverterTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:11:59" hostname="Ignaviers-MacBook-Pro.local" time="0.008">
   <properties/>
   <testcase name="convertTest" classname="com.linecorp.bot.client.ExceptionConverterTest" time="0.0"/>
   <testcase name="convertUnknownExceptionTest" classname="com.linecorp.bot.client.ExceptionConverterTest" time="0.0"/>
   <testcase name="exceptionInConvertFallbackedTest" classname="com.linecorp.bot.client.ExceptionConverterTest" time="0.007"/>
+>>>>>>> master
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

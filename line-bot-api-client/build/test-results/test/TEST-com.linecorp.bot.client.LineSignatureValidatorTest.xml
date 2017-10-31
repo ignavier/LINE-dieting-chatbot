@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
+<testsuite name="com.linecorp.bot.client.LineSignatureValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-30T13:46:35" hostname="Lenovo-PC" time="0.113">
+  <properties/>
+  <testcase name="validateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.077"/>
+  <testcase name="generateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.036"/>
+=======
 <testsuite name="com.linecorp.bot.client.LineSignatureValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-31T06:12:00" hostname="Ignaviers-MacBook-Pro.local" time="0.056">
   <properties/>
   <testcase name="validateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.05"/>
   <testcase name="generateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.006"/>
+>>>>>>> master
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
