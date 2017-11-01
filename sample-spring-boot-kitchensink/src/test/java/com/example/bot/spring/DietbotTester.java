@@ -70,7 +70,7 @@ public class DietbotTester {
 		} finally {
 			this.databaseEngine.deleteUserInfo("testUser");
 		}
-		assertThat(!thrown);
+		assertThat(thrown).isEqualTo(false);
 	}
 	
 	@Test
@@ -82,7 +82,7 @@ public class DietbotTester {
 		} catch (Exception e) {
 			thrown = true;
 		}
-		assertThat(!thrown);
+		assertThat(thrown).isEqualTo(false);
 	}
 
 	@Test
