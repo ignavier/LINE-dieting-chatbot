@@ -19,6 +19,7 @@ apply plugin: 'org.springframework.boot'
 dependencies {
     compile project(':line-bot-spring-boot')
     compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
+    compile "com.rivescript:rivescript-core:0.10.0"
 }
 
 test {

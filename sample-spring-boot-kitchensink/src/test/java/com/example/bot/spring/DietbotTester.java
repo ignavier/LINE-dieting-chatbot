@@ -44,6 +44,10 @@ import lombok.extern.slf4j.Slf4j;
 
 import com.example.bot.spring.DatabaseEngine;
 
+import com.rivescript.Config;
+import com.rivescript.RiveScript;
+import java.io.File;
+
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest(classes = { DietbotTester.class, DatabaseEngine.class })
@@ -51,10 +55,30 @@ import com.example.bot.spring.DatabaseEngine;
 public class DietbotTester {
 	@Autowired
 	private DatabaseEngine databaseEngine;
+
+	private RiveScript bot;
 	
 	@Test
-	public void testNotFound() throws Exception {}
+	public void testNotFound() throws Exception {
+		assertThat(1).isEqualTo(1);
+	}
 	
 	@Test
 	public void testFound() throws Exception {}
+
+	@Test
+	public void testNewRivescript() throws Exception {
+		bot = new RiveScript();
+		File resourcesDirectory = new File("src/test/resources/rivescript");
+		// assertThat(resourcesDirectory.getAbsolutePath()).isEqualTo("abc");
+		bot.loadDirectory(resourcesDirectory.getAbsolutePath());
+
+		// Sort the replies after loading them!
+		bot.sortReplies();
+
+		// Get a reply.
+		String reply = bot.reply("user", "hello");
+		assertThat(reply).isEqualTo("Hi there!");
+
+	}
 }
