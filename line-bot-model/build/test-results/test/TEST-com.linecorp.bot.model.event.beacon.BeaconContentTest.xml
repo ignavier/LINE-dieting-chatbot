@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:38" hostname="Lenovo-PC" time="0.1">
-  <properties/>
-  <testcase name="beaconContentEqualityTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.095"/>
-  <testcase name="beaconContentArrayProtectedTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.004"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
