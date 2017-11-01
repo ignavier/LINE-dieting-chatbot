@@ -1,0 +1,14 @@
++ [*] (tweak|change|alter|update|modify) [my] (personal (info|information|details|particulars) [*]|(height|weight|age|name|allergy|allergies) [*])
+- CollectUserInfoState
+
++ ([*] ([eating] at a restaurant|looking at a menu) [now]|[*] help me (look|check out) [*] menu) 
+- InputMenuState
+
++ ([*] finished eating [*]|[just] (ate|eaten|had a meal|had lunch|had dinner|had breakfast)) [*]
+- PostEatingState
+
++ (What [did] I (had|eat) (yesterday|just now|not long ago)|What is my (fat|carbohydrate|sodium|vitamin) intake today)
+- ProvideInfoState
+
++ *
+- StandbyState
