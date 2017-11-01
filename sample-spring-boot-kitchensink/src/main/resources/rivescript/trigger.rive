@@ -1,0 +1,58 @@
++ * 
+- Hi I am a chatbot.{topic=standby} <set state=standby>
+
+> topic standby 
+
+    + [*] (tweak|change|alter|update|modify) [my] ([personal] (info|information|details|particulars) [*]|(height|weight|age|name|allergy|allergies) [*])
+    - Okay, I will now ask you a few questions  {topic=collect_user_info} <set state=collect_user_info>
+
+    + ([*] ([eating] at a restaurant|looking at a menu) [now]|[*] help me (look|check out) [*] menu) 
+    - Okay, please let me have a look at your menu. {topic=input_menu} <set state=input_menu>
+
+    + ([*] finished eating [*]|[*] [just] (ate|eaten|had a meal|had lunch|had dinner|had breakfast)) [*]
+    - Great, would you mind telling me what you've ate? {topic=post_eating} <set state=post_eating>
+
+    + (what [did] i (had|eat) (yesterday|just now|not long ago)|what is my (fat|carbohydrate|sodium|vitamin) intake today)
+    - Hold on, let me check my records. {topic=provide_info} <set state=provide_info>
+
+    + talk later
+    - Okay see you later. {topic=standby} <set state=standby>
+
+< topic
+
+> topic collect_user_info 
+    + talk later
+    - Okay see you later. {topic=standby} <set state=standby>
+    
+    + * 
+    - collect_user_info
+< topic
+
+> topic input_menu 
+    + talk later
+    - Okay see you later. {topic=standby} <set state=standby>
+    
+    + * 
+    - input_menu
+< topic
+
+> topic post_eating
+    + talk later
+    - Okay see you later. {topic=standby} <set state=standby>
+
+    + * 
+    - post_eating
+< topic
+
+> topic provide_info
+    + talk later
+    - Okay see you later. {topic=standby} <set state=standby>
+    
+    + * 
+    - provide_info
+< topic
+
+> topic recommend
+    + talk later
+    - Okay see you later. {topic=standby} <set state=standby>
+< topic
