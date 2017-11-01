@@ -1,0 +1,9 @@
+! version = 2.0
++ hello
+- Hi there!
+
++ can you tell me my id
+- <id>
+
++ my name is *
+- <set name=<formal>>Hello, <formal>.
