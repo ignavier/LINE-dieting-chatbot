@@ -44,41 +44,37 @@ import lombok.extern.slf4j.Slf4j;
 
 import com.example.bot.spring.DatabaseEngine;
 
-import com.rivescript.Config;
-import com.rivescript.RiveScript;
-import java.io.File;
-
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest(classes = { DietbotTester.class, DatabaseEngine.class })
 @SpringBootTest(classes = { DietbotTester.class, SQLDatabaseEngine.class })
 public class DietbotTester {
 	@Autowired
-	private DatabaseEngine databaseEngine;
-
-	private RiveScript bot;
+	private SQLDatabaseEngine databaseEngine;
 	
 	@Test
-	public void testNotFound() throws Exception {
-		assertThat(1).isEqualTo(1);
+	public void writeUserInfoNonExisting() throws Exception {
+		boolean thrown = false;
+		String[] allergies = {"peanuts", "shrimp"};
+		try {
+			this.databaseEngine.writeUserInfo("testUser", 20, "male", 1.75, 60, allergies);
+		} catch (Exception e) {
+			thrown = true;
+		} finally {
+			this.databaseEngine.deleteUserInfo("testUser");
+		}
+		assertThat(!thrown);
 	}
 	
 	@Test
-	public void testFound() throws Exception {}
-
-	@Test
-	public void testNewRivescript() throws Exception {
-		bot = new RiveScript();
-		File resourcesDirectory = new File("src/test/resources/rivescript");
-		// assertThat(resourcesDirectory.getAbsolutePath()).isEqualTo("abc");
-		bot.loadDirectory(resourcesDirectory.getAbsolutePath());
-
-		// Sort the replies after loading them!
-		bot.sortReplies();
-
-		// Get a reply.
-		String reply = bot.reply("user", "hello");
-		assertThat(reply).isEqualTo("Hi there!");
-
+	public void writeUserInfoExisting() throws Exception {
+		boolean thrown = false;
+		String[] allergies = {"water"};
+		try {
+			this.databaseEngine.writeUserInfo("testUserExisting", 21, "female", 1.64, 55, allergies);
+		} catch (Exception e) {
+			thrown = true;
+		}
+		assertThat(!thrown);
 	}
 }

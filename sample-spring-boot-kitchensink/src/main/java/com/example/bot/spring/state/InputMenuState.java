@@ -1,29 +1,18 @@
 package com.example.bot.spring;
 
 import com.example.bot.spring.DietbotController.DownloadedContent;
+import com.asprise.ocr.Ocr;
+import java.io.File;
+import java.nio.file.Path;
 
 public class InputMenuState extends State {
+    // Constant values
+	private final String NO_CHARACTER_MESSAGE = "There is no chracter in the image!";
     /**
      * Default constructor for InputMenuState
      */
 	public InputMenuState() {
 		
-	}
-
-    /**
-     * Check if input message will trigger this state
-     * Inherited from abstract base class
-     * @param text A String data type
-     * @return A bool data type
-     */
-	public boolean checkTrigger(String text) {
-		// Just for testing
-		if(text.equals("InputMenuState")) {
-			return true;
-		}
-		else {
-			return false;
-		}
 	}
 
     /**
@@ -43,6 +32,27 @@ public class InputMenuState extends State {
      * @return A String data type
      */
 	public String reply(DownloadedContent jpg) {
-		return "Your image has been well received!";
+		String ocr_string = decodeImage(jpg);
+		return ocr_string;
+	}
+
+    /**
+     * Perform OCR on the image
+     * @param jpg A DownloadedContent data type
+     * @return A String data type
+     */
+	public String decodeImage(DownloadedContent jpg) {
+		Ocr.setUp();    // One time setup
+		Ocr ocr = new Ocr();    // Create a new OCR engine
+		ocr.startEngine("eng", Ocr.SPEED_FASTEST);    // English
+		String ocr_string = ocr.recognize(new File[] {new File(jpg.getPathString())},
+										Ocr.RECOGNIZE_TYPE_ALL,
+										Ocr.OUTPUT_FORMAT_PLAINTEXT);
+		ocr.stopEngine();    // Stop the OCR engine
+
+		switch(ocr_string) {
+			case "": return NO_CHARACTER_MESSAGE;
+			default: return "The characters in the image are: \n \n" + ocr_string;
+		}
 	}
 }

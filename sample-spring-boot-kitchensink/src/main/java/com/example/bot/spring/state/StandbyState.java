@@ -2,11 +2,11 @@ package com.example.bot.spring;
 
 //import java.io.IOException;
 
-public class RecommendationState extends State {
+public class StandbyState extends State {
     /**
-     * Default constructor for RecommendationState
+     * Default constructor for StandbyState
      */
-	public RecommendationState() {
+	public StandbyState() {
 		
 	}
 

@@ -11,22 +11,6 @@ public class ProvideInfoState extends State {
 	}
 
     /**
-     * Check if input message will trigger this state
-     * Inherited from abstract base class
-     * @param text A String data type
-     * @return A bool data type
-     */
-	public boolean checkTrigger(String text) {
-		// Just for testing
-		if(text.equals("ProvideInfoState")) {
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-
-    /**
      * Reply a message for input text
      * Inherited from abstract base class
      * @param text A String data type

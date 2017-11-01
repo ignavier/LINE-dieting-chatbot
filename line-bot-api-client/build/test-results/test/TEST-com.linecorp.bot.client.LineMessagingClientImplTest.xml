@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="com.linecorp.bot.client.LineMessagingClientImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:33" hostname="Lenovo-PC" time="0.036">
   <properties/>
   <testcase name="getProfileTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.021"/>
@@ -9,5 +10,19 @@
   <testcase name="multicastTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.001"/>
   <testcase name="leaveGroupTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
+=======
+<testsuite name="com.linecorp.bot.client.LineMessagingClientImplTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:03" hostname="Ignaviers-MacBook-Pro.local" time="0.035">
+  <properties/>
+  <testcase name="getProfileTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.02"/>
+  <testcase name="pushMessageTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <testcase name="leaveRoomTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <testcase name="replyMessageTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.001"/>
+  <testcase name="getMessageContentTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.005"/>
+  <testcase name="multicastTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <testcase name="leaveGroupTest" classname="com.linecorp.bot.client.LineMessagingClientImplTest" time="0.002"/>
+  <system-out><![CDATA[15:51:03.736 [OkHttp http://localhost:49947/...] INFO com.linecorp.bot.client.wire - <-- HTTP FAILED: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:49947
+15:51:03.736 [OkHttp http://localhost:49947/...] INFO com.linecorp.bot.client.wire - <-- HTTP FAILED: java.net.ConnectException: Failed to connect to localhost/0:0:0:0:0:0:0:1:49947
+]]></system-out>
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -41,7 +41,11 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
+<<<<<<< HEAD
 <div class="counter">0.169s</div>
+=======
+<div class="counter">0.162s</div>
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 <p>duration</p>
 </div>
 </td>
@@ -82,7 +86,11 @@
 </thead>
 <tr>
 <td class="success">missingSignatureTest</td>
+<<<<<<< HEAD
 <td>0.169s</td>
+=======
+<td>0.162s</td>
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 <td class="success">passed</td>
 </tr>
 </table>
@@ -90,6 +98,7 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
+<<<<<<< HEAD
 <pre>11:52:47.579 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.linecorp.bot.spring.boot.IntegrationTest]
 11:52:47.582 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
 11:52:47.591 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
@@ -117,6 +126,35 @@
 11:52:48.410 [Test worker] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
 11:52:48.417 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, line.bot.handler.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
 11:52:48.418 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+=======
+<pre>15:51:12.339 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.343 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+15:51:12.351 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+15:51:12.377 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.linecorp.bot.spring.boot.IntegrationTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+15:51:12.389 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.linecorp.bot.spring.boot.IntegrationTest], using SpringBootContextLoader
+15:51:12.393 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.linecorp.bot.spring.boot.IntegrationTest]: class path resource [com/linecorp/bot/spring/boot/IntegrationTest-context.xml] does not exist
+15:51:12.394 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.linecorp.bot.spring.boot.IntegrationTest]: class path resource [com/linecorp/bot/spring/boot/IntegrationTestContext.groovy] does not exist
+15:51:12.394 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.linecorp.bot.spring.boot.IntegrationTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+15:51:12.449 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.453 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.linecorp.bot.spring.boot.IntegrationTest]: using defaults.
+15:51:12.456 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+15:51:12.471 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttribute]
+15:51:12.474 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Could not instantiate TestExecutionListener [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their required dependencies) available. Offending class: [org/springframework/transaction/interceptor/TransactionAttributeSource]
+15:51:12.474 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@28833023, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@39c3985f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@312cd83a, org.springframework.test.context.support.DirtiesContextTestExecutionListener@33799de2, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@24ab186, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@276ed0f0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7054312f, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@f3d344a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@58ac72aa, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@914c01f]
+15:51:12.477 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.478 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.479 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.479 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.484 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@68e83f8b testClass = IntegrationTest, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@612cf2ab testClass = IntegrationTest, locations = '{}', classes = '{class com.linecorp.bot.spring.boot.IntegrationTest, class com.linecorp.bot.spring.boot.IntegrationTest$MyController, class com.linecorp.bot.spring.boot.IntegrationTest, class com.linecorp.bot.spring.boot.IntegrationTest$MyController}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{line.bot.handler.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[[ImportsContextCustomizer@58fcb17b key = [@org.springframework.boot.SpringBootConfiguration(), @org.springframework.boot.autoconfigure.AutoConfigurationPackage(), @org.springframework.context.annotation.Import(value=[class org.springframework.boot.autoconfigure.EnableAutoConfigurationImportSelector]), @org.springframework.boot.autoconfigure.EnableAutoConfiguration(exclude=[], excludeName=[]), @org.springframework.context.annotation.Import(value=[class org.springframework.boot.autoconfigure.AutoConfigurationPackages$Registrar]), @org.springframework.test.context.BootstrapWith(value=class org.springframework.boot.test.context.SpringBootTestContextBootstrapper), @org.springframework.context.annotation.Configuration(value=), @org.springframework.stereotype.Component(value=), @org.springframework.boot.autoconfigure.SpringBootApplication(scanBasePackageClasses=[], exclude=[], excludeName=[], scanBasePackages=[]), @org.springframework.context.annotation.ComponentScan(scopeResolver=class org.springframework.context.annotation.AnnotationScopeMetadataResolver, lazyInit=false, resourcePattern=**/*.class, excludeFilters=[@org.springframework.context.annotation.ComponentScan$Filter(pattern=[], type=CUSTOM, value=[], classes=[class org.springframework.boot.context.TypeExcludeFilter]), @org.springframework.context.annotation.ComponentScan$Filter(pattern=[], type=CUSTOM, value=[], classes=[class org.springframework.boot.autoconfigure.AutoConfigurationExcludeFilter])], useDefaultFilters=true, scopedProxy=DEFAULT, basePackageClasses=[], nameGenerator=interface org.springframework.beans.factory.support.BeanNameGenerator, basePackages=[], value=[], includeFilters=[]), @org.junit.runner.RunWith(value=class org.springframework.test.context.junit4.SpringRunner), @org.springframework.boot.test.context.SpringBootTest(webEnvironment=MOCK, value=[], properties=[line.bot.handler.enabled=false], classes=[class com.linecorp.bot.spring.boot.IntegrationTest, class com.linecorp.bot.spring.boot.IntegrationTest$MyController]), @org.springframework.test.context.web.WebAppConfiguration(value=src/main/webapp)]], org.springframework.boot.test.context.SpringBootTestContextCustomizer@7d2e2795, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6d01f4e, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@416b101f, org.springframework.test.context.web.socket.MockServerContainerContextCustomizer@45d52022], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]]], class annotated with @DirtiesContext [false] with mode [null].
+15:51:12.740 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.740 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.linecorp.bot.spring.boot.IntegrationTest]
+15:51:12.828 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemProperties] PropertySource with lowest search precedence
+15:51:12.829 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [systemEnvironment] PropertySource with lowest search precedence
+15:51:12.829 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Initialized StandardEnvironment with PropertySources [systemProperties,systemEnvironment]
+15:51:12.831 [Test worker] DEBUG org.springframework.core.env.MutablePropertySources - Adding [inline] PropertySource with highest search precedence
+15:51:12.839 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, line.bot.handler.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+15:51:12.840 [Test worker] DEBUG org.springframework.core.env.StandardEnvironment - Adding [Inlined Test Properties] PropertySource with highest search precedence
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 
   .   ____          _            __ _ _
  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
@@ -126,6 +164,7 @@
  =========|_|==============|___/=/_/_/_/
  :: Spring Boot ::        (v1.5.2.RELEASE)
 
+<<<<<<< HEAD
 2017-11-01 11:52:48.874  INFO 1412 --- [    Test worker] c.l.bot.spring.boot.IntegrationTest      : Starting IntegrationTest on Lenovo-PC with PID 1412 (started by user in C:\Users\user\coding_workspace\comp3111_chatbot\dietbot\forked\hkust_cs3111h\line-bot-spring-boot)
 2017-11-01 11:52:48.875  INFO 1412 --- [    Test worker] c.l.bot.spring.boot.IntegrationTest      : No active profile set, falling back to default profiles: default
 2017-11-01 11:52:48.925  INFO 1412 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3c3ce8bc: startup date [Wed Nov 01 11:52:48 SGT 2017]; root of context hierarchy
@@ -143,6 +182,25 @@
 2017-11-01 11:52:52.865  INFO 1412 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
 2017-11-01 11:52:52.884  INFO 1412 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 19 ms
 2017-11-01 11:52:52.927  INFO 1412 --- [    Test worker] c.l.b.s.b.i.LineBotServerInterceptor     : LINE Bot callback exception: Missing 'X-Line-Signature' header
+=======
+2017-11-01 15:51:13.398  INFO 33810 --- [    Test worker] c.l.bot.spring.boot.IntegrationTest      : Starting IntegrationTest on Ignaviers-MacBook-Pro.local with PID 33810 (started by Ignavier in /Users/Ignavier/workspace/java/eclipse-sts/hkust_cs3111h/line-bot-spring-boot)
+2017-11-01 15:51:13.399  INFO 33810 --- [    Test worker] c.l.bot.spring.boot.IntegrationTest      : No active profile set, falling back to default profiles: default
+2017-11-01 15:51:13.435  INFO 33810 --- [    Test worker] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@38e63e5f: startup date [Wed Nov 01 15:51:13 MYT 2017]; root of context hierarchy
+2017-11-01 15:51:14.426  INFO 33810 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'lineBotServerArgumentProcessor' with a different definition: replacing [Generic bean: class [com.linecorp.bot.spring.boot.support.LineBotServerArgumentProcessor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/Users/Ignavier/workspace/java/eclipse-sts/hkust_cs3111h/line-bot-spring-boot/build/classes/main/com/linecorp/bot/spring/boot/support/LineBotServerArgumentProcessor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.linecorp.bot.spring.boot.LineBotAutoConfiguration; factoryMethodName=lineBotServerArgumentProcessor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/linecorp/bot/spring/boot/LineBotAutoConfiguration.class]]
+2017-11-01 15:51:14.427  INFO 33810 --- [    Test worker] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'lineBotServerInterceptor' with a different definition: replacing [Generic bean: class [com.linecorp.bot.spring.boot.interceptor.LineBotServerInterceptor]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [/Users/Ignavier/workspace/java/eclipse-sts/hkust_cs3111h/line-bot-spring-boot/build/classes/main/com/linecorp/bot/spring/boot/interceptor/LineBotServerInterceptor.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=com.linecorp.bot.spring.boot.LineBotAutoConfiguration; factoryMethodName=lineBotServerInterceptor; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/linecorp/bot/spring/boot/LineBotAutoConfiguration.class]]
+2017-11-01 15:51:15.950  INFO 33810 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@38e63e5f: startup date [Wed Nov 01 15:51:13 MYT 2017]; root of context hierarchy
+2017-11-01 15:51:16.056  INFO 33810 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/callback],methods=[POST]}&quot; onto public void com.linecorp.bot.spring.boot.IntegrationTest$MyController.callback(java.util.List&lt;com.linecorp.bot.model.event.Event&gt;) throws java.lang.Exception
+2017-11-01 15:51:16.062  INFO 33810 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error]}&quot; onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-11-01 15:51:16.063  INFO 33810 --- [    Test worker] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped &quot;{[/error],produces=[text/html]}&quot; onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-11-01 15:51:16.102  INFO 33810 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:51:16.102  INFO 33810 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:51:16.155  INFO 33810 --- [    Test worker] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-11-01 15:51:16.487  INFO 33810 --- [    Test worker] c.l.bot.spring.boot.IntegrationTest      : Started IntegrationTest in 3.635 seconds (JVM running for 5.52)
+2017-11-01 15:51:16.552  INFO 33810 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring FrameworkServlet ''
+2017-11-01 15:51:16.553  INFO 33810 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization started
+2017-11-01 15:51:16.575  INFO 33810 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : FrameworkServlet '': initialization completed in 22 ms
+2017-11-01 15:51:16.633  INFO 33810 --- [    Test worker] c.l.b.s.b.i.LineBotServerInterceptor     : LINE Bot callback exception: Missing 'X-Line-Signature' header
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 
 MockHttpServletRequest:
       HTTP Method = POST
@@ -185,8 +243,13 @@ MockHttpServletResponse:
 <div id="tab2" class="tab">
 <h2>Standard error</h2>
 <span class="code">
+<<<<<<< HEAD
 <pre>Nov 01, 2017 11:52:48 AM okhttp3.mockwebserver.MockWebServer$2 execute
 INFO: MockWebServer[54553] starting to accept connections
+=======
+<pre>Nov 01, 2017 3:51:12 PM okhttp3.mockwebserver.MockWebServer$2 execute
+INFO: MockWebServer[49980] starting to accept connections
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 </pre>
 </span>
 </div>
@@ -198,7 +261,11 @@ INFO: MockWebServer[54553] starting to accept connections
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
+<<<<<<< HEAD
 <a href="http://www.gradle.org">Gradle 3.5</a> at Nov 1, 2017 11:52:53 AM</p>
+=======
+<a href="http://www.gradle.org">Gradle 3.5</a> at Nov 1, 2017 3:51:17 PM</p>
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 </div>
 </div>
 </body>

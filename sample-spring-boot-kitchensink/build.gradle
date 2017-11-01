@@ -20,6 +20,7 @@ dependencies {
     compile project(':line-bot-spring-boot')
     compile group: 'postgresql', name: 'postgresql', version: '9.0-801.jdbc4'
     compile "com.rivescript:rivescript-core:0.10.0"
+    compile group: "com.asprise.ocr", name: "java-ocr-api", version: "15.3.0.3"
 }
 
 test {

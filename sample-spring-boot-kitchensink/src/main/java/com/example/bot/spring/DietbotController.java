@@ -7,6 +7,7 @@ import java.io.OutputStream;
 import java.io.UncheckedIOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.time.LocalDateTime;
 import java.util.Arrays;
 import java.util.Collections;
@@ -188,5 +189,9 @@ public class DietbotController {
 	public static class DownloadedContent {
 		Path path;
 		String uri;
+
+		public String getPathString() {
+			return path.toString();
+		}
 	}
 }

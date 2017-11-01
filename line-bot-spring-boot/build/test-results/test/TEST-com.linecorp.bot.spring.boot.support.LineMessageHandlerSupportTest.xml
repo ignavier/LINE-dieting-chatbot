@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testsuite name="com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:52" hostname="Lenovo-PC" time="0.29">
   <properties/>
   <testcase name="dispatchAndReplyMessageTest" classname="com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest" time="0.247"/>
@@ -12,6 +13,21 @@
 2017-11-01 11:52:53.271  INFO 1412 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[MessageEvent<TextMessageContent>]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$AnotherMessageHandler.textMessageEventHandler(com.linecorp.bot.model.event.MessageEvent<com.linecorp.bot.model.event.message.TextMessageContent>)
 2017-11-01 11:52:53.272  INFO 1412 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[MessageEvent]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$MessageHandler.generalMessageHandler(com.linecorp.bot.model.event.MessageEvent)
 2017-11-01 11:52:53.272  INFO 1412 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[Event]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$AnotherMessageHandler.defaultEventHandler(com.linecorp.bot.model.event.Event)
+=======
+<testsuite name="com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:16" hostname="Ignaviers-MacBook-Pro.local" time="0.249">
+  <properties/>
+  <testcase name="dispatchAndReplyMessageTest" classname="com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest" time="0.212"/>
+  <testcase name="testRefreshForOneItem" classname="com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest" time="0.007"/>
+  <testcase name="testPrioritySelection" classname="com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest" time="0.029"/>
+  <system-out><![CDATA[2017-11-01 15:51:16.880  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Registered LINE Messaging API event handler: count = 1
+2017-11-01 15:51:16.881  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[ReplyEvent]" onto public com.linecorp.bot.model.message.TextMessage com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$ReplyHandler.reply(com.linecorp.bot.model.event.ReplyEvent)
+2017-11-01 15:51:16.896  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Registered LINE Messaging API event handler: count = 1
+2017-11-01 15:51:16.896  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[MessageEvent]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$MessageHandler.generalMessageHandler(com.linecorp.bot.model.event.MessageEvent)
+2017-11-01 15:51:16.930  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Registered LINE Messaging API event handler: count = 3
+2017-11-01 15:51:16.930  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[MessageEvent<TextMessageContent>]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$AnotherMessageHandler.textMessageEventHandler(com.linecorp.bot.model.event.MessageEvent<com.linecorp.bot.model.event.message.TextMessageContent>)
+2017-11-01 15:51:16.930  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[MessageEvent]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$MessageHandler.generalMessageHandler(com.linecorp.bot.model.event.MessageEvent)
+2017-11-01 15:51:16.931  INFO 33810 --- [    Test worker] c.l.b.s.b.s.LineMessageHandlerSupport    : Mapped "[Event]" onto public void com.linecorp.bot.spring.boot.support.LineMessageHandlerSupportTest$AnotherMessageHandler.defaultEventHandler(com.linecorp.bot.model.event.Event)
+>>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
