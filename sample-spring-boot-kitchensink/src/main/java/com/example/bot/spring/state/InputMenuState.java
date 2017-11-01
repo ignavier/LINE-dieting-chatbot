@@ -44,7 +44,7 @@ public class InputMenuState extends State {
 	public String decodeImage(DownloadedContent jpg) {
 		Ocr.setUp();    // One time setup
 		Ocr ocr = new Ocr();    // Create a new OCR engine
-		ocr.startEngine("eng", Ocr.SPEED_FASTEST);    // English
+		ocr.startEngine("eng", Ocr.SPEED_FAST);    // English
 		String ocr_string = ocr.recognize(new File[] {new File(jpg.getPathString())},
 										Ocr.RECOGNIZE_TYPE_ALL,
 										Ocr.OUTPUT_FORMAT_PLAINTEXT);

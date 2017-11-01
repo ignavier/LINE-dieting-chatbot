@@ -44,6 +44,11 @@ import lombok.extern.slf4j.Slf4j;
 
 import com.example.bot.spring.DatabaseEngine;
 
+import com.rivescript.Config;
+import com.rivescript.RiveScript;
+import java.io.File;
+import java.util.HashMap;
+import java.util.Map;
 
 @RunWith(SpringRunner.class)
 //@SpringBootTest(classes = { DietbotTester.class, DatabaseEngine.class })
@@ -51,6 +56,8 @@ import com.example.bot.spring.DatabaseEngine;
 public class DietbotTester {
 	@Autowired
 	private SQLDatabaseEngine databaseEngine;
+
+	private RiveScript bot;
 	
 	@Test
 	public void writeUserInfoNonExisting() throws Exception {
@@ -76,5 +83,64 @@ public class DietbotTester {
 			thrown = true;
 		}
 		assertThat(!thrown);
+	}
+
+	@Test
+	public void testNewRivescript() throws Exception {
+		bot = new RiveScript();
+		File resourcesDirectory = new File("src/test/resources/rivescript");
+		// assertThat(resourcesDirectory.getAbsolutePath()).isEqualTo("abc");
+		bot.loadDirectory(resourcesDirectory.getAbsolutePath());
+
+		// Sort the replies after loading them!
+		bot.sortReplies();
+
+		// Get a reply.
+		String reply = bot.reply("user2", "can you tell me my id");
+		assertThat(reply).isEqualTo("user2");
+	}
+
+	// to test how to use RiveScript with different users and get user variables
+	// that have been set before or not.
+	@Test
+	public void testRivescriptToGetVariableFromDifferentUsers() throws Exception {
+		bot = new RiveScript();
+		File resourcesDirectory = new File("src/test/resources/rivescript");
+		bot.loadDirectory(resourcesDirectory.getAbsolutePath());
+
+		bot.sortReplies();
+
+		String reply1 = bot.reply("user1", "can you tell me my id");
+		assertThat(reply1).isEqualTo("user1");
+
+		String reply2 = bot.reply("user2", "can you tell me my id");
+		assertThat(reply2).isEqualTo("user2");
+
+		// try to set user variable "name" for two different users
+		String setName1 = bot.reply("user1", "my name is Gordon.");
+		assertThat(setName1).contains("Gordon");
+		String setName2 = bot.reply("user2", "my name is Tom.");
+		assertThat(setName2).contains("Tom");
+
+		// try to get them back and check equality
+		String user1Name = bot.getUservar("user1", "name");
+		assertThat(user1Name).isEqualTo("Gordon");
+		String user2Name = bot.getUservar("user2", "name");
+		assertThat(user2Name).isEqualTo("Tom");
+
+		// try to get unset user variable
+		String unsetVar = bot.getUservar("user1", "age");
+		assertThat(unsetVar).isEqualTo(null);
+
+
+		Map<String, String> varSetToValue = new HashMap<String, String>();
+		varSetToValue.put("age", "100");
+		varSetToValue.put("weight", "200");
+		bot.setUservars("user1", varSetToValue);
+		String age = bot.getUservar("user1", "age");
+		assertThat(age).isEqualTo("100");
+
+		String weight = bot.getUservar("user1", "weight");
+		assertThat(weight).isEqualTo("200");
 	}
 }
