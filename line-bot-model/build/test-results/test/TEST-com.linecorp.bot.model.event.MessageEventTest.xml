@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linecorp.bot.model.event.MessageEventTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-10-31T08:14:51" hostname="Ignaviers-MacBook-Pro.local" time="0.003">
+<testsuite name="com.linecorp.bot.model.event.MessageEventTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:37" hostname="Lenovo-PC" time="0.003">
   <properties/>
   <testcase name="getMessageBinaryCompatibilityTest" classname="com.linecorp.bot.model.event.MessageEventTest" time="0.001"/>
   <testcase name="constructor2ndParameterBinaryCompatibilityTest" classname="com.linecorp.bot.model.event.MessageEventTest" time="0.002"/>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linecorp.bot.client.CallbackAdaptorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-10-31T08:14:47" hostname="Ignaviers-MacBook-Pro.local" time="0.548">
+<testsuite name="com.linecorp.bot.client.CallbackAdaptorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:31" hostname="Lenovo-PC" time="0.576">
   <properties/>
-  <testcase name="onResponseSuccessfullyTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.22"/>
-  <testcase name="onFailureTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.029"/>
-  <testcase name="onResponseWithErrorTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.298"/>
+  <testcase name="onResponseSuccessfullyTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.243"/>
+  <testcase name="onFailureTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.027"/>
+  <testcase name="onResponseWithErrorTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.305"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

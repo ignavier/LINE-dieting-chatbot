@@ -1,60 +1,62 @@
-a16:14:54.033 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-a16:14:54.323 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-`16:14:54.331 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
-  "events": [
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "message",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-	      },
-      "message": {
-        "id": "325708",
-        "type": "text",
-        "text": "Hello, world"
-      }
-    },
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "follow",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-      }
-    }
-  ]
-}
-
-c16:14:54.476 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-`16:14:54.481 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
-  "events": [
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "message",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-	      },
-      "message": {
-        "id": "325708",
-        "type": "text",
-        "text": "Hello, world"
-      }
-    },
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "follow",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-      }
-    }
-  ]
-}
-
-	c16:14:54.498 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+b11:52:41.437 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+b11:52:41.987 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+a11:52:42.013 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
+  "events": [
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "message",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+
+      },
+      "message": {
+        "id": "325708",
+        "type": "text",
+         "text": "Hello, world"
+	      }
+    },
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "follow",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+	      }
+    }
+  ]
+}
+
+d11:52:42.179 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+a11:52:42.185 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
+  "events": [
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "message",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+
+      },
+      "message": {
+        "id": "325708",
+        "type": "text",
+         "text": "Hello, world"
+	      }
+    },
+    {
+7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
+      "type": "follow",
+#      "timestamp": 1462629479859,
+      "source": {
+        "type": "user",
+7        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
+	      }
+    }
+  ]
+}
+
+	d11:52:42.197 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null

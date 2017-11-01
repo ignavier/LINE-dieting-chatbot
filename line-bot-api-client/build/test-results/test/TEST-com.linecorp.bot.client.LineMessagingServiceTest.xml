@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linecorp.bot.client.LineMessagingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-10-31T08:14:48" hostname="Ignaviers-MacBook-Pro.local" time="0.011">
+<testsuite name="com.linecorp.bot.client.LineMessagingServiceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:33" hostname="Lenovo-PC" time="0.015">
   <properties/>
-  <testcase name="relativeRequestTest" classname="com.linecorp.bot.client.LineMessagingServiceTest" time="0.011"/>
-  <system-out><![CDATA[16:14:48.961 [MockWebServer 55706] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[55706] starting to accept connections
-16:14:48.966 [Test worker] INFO com.linecorp.bot.client.wire - --> GET http://localhost:55706/CanContainsRelative/v2/bot/profile/USER_TOKEN http/1.1
-16:14:48.966 [Test worker] INFO com.linecorp.bot.client.wire - Authorization: Bearer SECRET
-16:14:48.966 [Test worker] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
-16:14:48.966 [Test worker] INFO com.linecorp.bot.client.wire - --> END GET
-16:14:48.967 [MockWebServer /127.0.0.1:55707] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[55706] received request: GET /CanContainsRelative/v2/bot/profile/USER_TOKEN HTTP/1.1 and responded: HTTP/1.1 200 OK
-16:14:48.967 [Test worker] INFO com.linecorp.bot.client.wire - <-- 200 OK http://localhost:55706/CanContainsRelative/v2/bot/profile/USER_TOKEN (1ms)
-16:14:48.967 [Test worker] INFO com.linecorp.bot.client.wire - Content-Length: 116
-16:14:48.968 [Test worker] INFO com.linecorp.bot.client.wire - 
-16:14:48.968 [Test worker] INFO com.linecorp.bot.client.wire - {"displayName":"name","userId":"userId","pictureUrl":"https://line.me/picture_url","statusMessage":"Status message"}
-16:14:48.968 [Test worker] INFO com.linecorp.bot.client.wire - <-- END HTTP (116-byte body)
-16:14:48.971 [MockWebServer 55706] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[55706] done accepting connections: Socket closed
+  <testcase name="relativeRequestTest" classname="com.linecorp.bot.client.LineMessagingServiceTest" time="0.015"/>
+  <system-out><![CDATA[11:52:33.230 [MockWebServer 54533] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[54533] starting to accept connections
+11:52:33.236 [Test worker] INFO com.linecorp.bot.client.wire - --> GET http://localhost:54533/CanContainsRelative/v2/bot/profile/USER_TOKEN http/1.1
+11:52:33.236 [Test worker] INFO com.linecorp.bot.client.wire - Authorization: Bearer SECRET
+11:52:33.236 [Test worker] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+11:52:33.236 [Test worker] INFO com.linecorp.bot.client.wire - --> END GET
+11:52:33.238 [Test worker] INFO com.linecorp.bot.client.wire - <-- 200 OK http://localhost:54533/CanContainsRelative/v2/bot/profile/USER_TOKEN (1ms)
+11:52:33.238 [MockWebServer /127.0.0.1:54534] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[54533] received request: GET /CanContainsRelative/v2/bot/profile/USER_TOKEN HTTP/1.1 and responded: HTTP/1.1 200 OK
+11:52:33.238 [Test worker] INFO com.linecorp.bot.client.wire - Content-Length: 116
+11:52:33.239 [Test worker] INFO com.linecorp.bot.client.wire - 
+11:52:33.239 [Test worker] INFO com.linecorp.bot.client.wire - {"displayName":"name","userId":"userId","pictureUrl":"https://line.me/picture_url","statusMessage":"Status message"}
+11:52:33.239 [Test worker] INFO com.linecorp.bot.client.wire - <-- END HTTP (116-byte body)
+11:52:33.243 [MockWebServer 54533] INFO okhttp3.mockwebserver.MockWebServer - MockWebServer[54533] done accepting connections: socket closed
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-10-31T08:15:02" hostname="Ignaviers-MacBook-Pro.local" time="0.052">
+<testsuite name="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:53" hostname="Lenovo-PC" time="0.067">
   <properties/>
   <testcase name="acceptListReplyTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.011"/>
-  <testcase name="acceptSingleReplyTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.004"/>
-  <testcase name="errorInCompletableLoggingTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.021"/>
-  <testcase name="errorInLineMessagingClientLoggingTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.008"/>
-  <testcase name="acceptCompletableSingleReplyTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.001"/>
-  <testcase name="checkListContentsNullTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.004"/>
+  <testcase name="acceptSingleReplyTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.001"/>
+  <testcase name="errorInCompletableLoggingTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.024"/>
+  <testcase name="errorInLineMessagingClientLoggingTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.015"/>
+  <testcase name="acceptCompletableSingleReplyTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.002"/>
+  <testcase name="checkListContentsNullTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.01"/>
   <testcase name="acceptCompletableListReplyTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.001"/>
-  <testcase name="checkListContentsIllegalTypeTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.002"/>
-  <system-out><![CDATA[2017-10-31 16:15:02.365 ERROR 18003 --- [    Test worker] c.l.b.s.b.s.ReplyByReturnValueConsumer   : Method return value waited but exception occurred in CompletedFuture
+  <testcase name="checkListContentsIllegalTypeTest" classname="com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest" time="0.001"/>
+  <system-out><![CDATA[2017-11-01 11:52:53.319 ERROR 1412 --- [    Test worker] c.l.b.s.b.s.ReplyByReturnValueConsumer   : Method return value waited but exception occurred in CompletedFuture
 
 com.linecorp.bot.client.exception.GeneralLineMessagingException: EXCEPTION HAPPEN!
 	at com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest.errorInCompletableLoggingTest(ReplyByReturnValueConsumerTest.java:114) ~[test/:na]
@@ -66,7 +66,7 @@ com.linecorp.bot.client.exception.GeneralLineMessagingException: EXCEPTION HAPPE
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[na:1.8.0_144]
 	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_144]
 
-2017-10-31 16:15:02.376  WARN 18003 --- [    Test worker] c.l.b.s.b.s.ReplyByReturnValueConsumer   : Reply message failed: EXCEPTION HAPPEN!
+2017-11-01 11:52:53.337  WARN 1412 --- [    Test worker] c.l.b.s.b.s.ReplyByReturnValueConsumer   : Reply message failed: EXCEPTION HAPPEN!
 
 com.linecorp.bot.client.exception.GeneralLineMessagingException: EXCEPTION HAPPEN!
 	at com.linecorp.bot.spring.boot.support.ReplyByReturnValueConsumerTest$1.<init>(ReplyByReturnValueConsumerTest.java:126) ~[test/:na]

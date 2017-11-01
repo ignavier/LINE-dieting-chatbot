@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.063s</div>
+<div class="counter">0.093s</div>
 <p>duration</p>
 </div>
 </td>
@@ -79,27 +79,27 @@
 </thead>
 <tr>
 <td class="success">status400BadRequestTest</td>
-<td>0.007s</td>
+<td>0.011s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">status401UnauthorizedTest</td>
-<td>0.006s</td>
+<td>0.012s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">status403ForbiddenTest</td>
-<td>0.016s</td>
+<td>0.028s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">status429TooManyRequestsTest</td>
-<td>0.006s</td>
+<td>0.013s</td>
 <td class="success">passed</td>
 </tr>
 <tr>
 <td class="success">status500InternalServerErrorTest</td>
-<td>0.028s</td>
+<td>0.029s</td>
 <td class="success">passed</td>
 </tr>
 </table>
@@ -107,51 +107,51 @@
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>16:14:48.910 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:55696/v2/bot/message/TOKEN/content http/1.1
-16:14:48.910 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
-16:14:48.910 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
-16:14:48.910 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
-16:14:48.917 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - &lt;-- 500 Server Error http://localhost:55696/v2/bot/message/TOKEN/content (6ms)
-16:14:48.917 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - Content-Length: 55
-16:14:48.918 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - 
-16:14:48.918 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Error on the internal server&quot;,&quot;details&quot;:[]}
-16:14:48.918 [OkHttp http://localhost:55696/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (55-byte body)
-16:14:48.936 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:55698/v2/bot/message/TOKEN/content http/1.1
-16:14:48.936 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
-16:14:48.936 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
-16:14:48.936 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
-16:14:48.937 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - &lt;-- 403 Client Error http://localhost:55698/v2/bot/message/TOKEN/content (1ms)
-16:14:48.938 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - Content-Length: 57
-16:14:48.938 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - 
-16:14:48.938 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Not authorized to use the API.&quot;,&quot;details&quot;:[]}
-16:14:48.938 [OkHttp http://localhost:55698/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (57-byte body)
-16:14:48.942 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:55700/v2/bot/message/TOKEN/content http/1.1
-16:14:48.942 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
-16:14:48.942 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
-16:14:48.942 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
-16:14:48.944 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - &lt;-- 401 Client Error http://localhost:55700/v2/bot/message/TOKEN/content (1ms)
-16:14:48.944 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - Content-Length: 70
-16:14:48.944 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - 
-16:14:48.944 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Valid Channel access token is not specified&quot;,&quot;details&quot;:[]}
-16:14:48.944 [OkHttp http://localhost:55700/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (70-byte body)
-16:14:48.948 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:55702/v2/bot/message/TOKEN/content http/1.1
-16:14:48.949 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
-16:14:48.949 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
-16:14:48.949 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
-16:14:48.951 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - &lt;-- 400 Client Error http://localhost:55702/v2/bot/message/TOKEN/content (1ms)
-16:14:48.951 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - Content-Length: 51
-16:14:48.951 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - 
-16:14:48.951 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Problem with the request&quot;,&quot;details&quot;:[]}
-16:14:48.951 [OkHttp http://localhost:55702/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (51-byte body)
-16:14:48.956 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:55704/v2/bot/message/TOKEN/content http/1.1
-16:14:48.956 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
-16:14:48.956 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
-16:14:48.956 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
-16:14:48.958 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - &lt;-- 429 Client Error http://localhost:55704/v2/bot/message/TOKEN/content (1ms)
-16:14:48.958 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - Content-Length: 64
-16:14:48.958 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - 
-16:14:48.958 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Exceeded the rate limit for API calls&quot;,&quot;details&quot;:[]}
-16:14:48.958 [OkHttp http://localhost:55704/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (64-byte body)
+<pre>11:52:33.143 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:54523/v2/bot/message/TOKEN/content http/1.1
+11:52:33.144 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
+11:52:33.144 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+11:52:33.144 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
+11:52:33.151 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - &lt;-- 500 Server Error http://localhost:54523/v2/bot/message/TOKEN/content (6ms)
+11:52:33.151 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - Content-Length: 55
+11:52:33.151 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - 
+11:52:33.151 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Error on the internal server&quot;,&quot;details&quot;:[]}
+11:52:33.152 [OkHttp http://localhost:54523/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (55-byte body)
+11:52:33.177 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:54525/v2/bot/message/TOKEN/content http/1.1
+11:52:33.177 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
+11:52:33.178 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+11:52:33.180 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
+11:52:33.183 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - &lt;-- 403 Client Error http://localhost:54525/v2/bot/message/TOKEN/content (2ms)
+11:52:33.184 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - Content-Length: 57
+11:52:33.184 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - 
+11:52:33.184 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Not authorized to use the API.&quot;,&quot;details&quot;:[]}
+11:52:33.184 [OkHttp http://localhost:54525/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (57-byte body)
+11:52:33.190 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:54527/v2/bot/message/TOKEN/content http/1.1
+11:52:33.190 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
+11:52:33.191 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+11:52:33.191 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
+11:52:33.195 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - &lt;-- 401 Client Error http://localhost:54527/v2/bot/message/TOKEN/content (3ms)
+11:52:33.195 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - Content-Length: 70
+11:52:33.196 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - 
+11:52:33.196 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Valid Channel access token is not specified&quot;,&quot;details&quot;:[]}
+11:52:33.196 [OkHttp http://localhost:54527/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (70-byte body)
+11:52:33.203 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:54529/v2/bot/message/TOKEN/content http/1.1
+11:52:33.203 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
+11:52:33.204 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+11:52:33.204 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
+11:52:33.207 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - &lt;-- 400 Client Error http://localhost:54529/v2/bot/message/TOKEN/content (2ms)
+11:52:33.207 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - Content-Length: 51
+11:52:33.207 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - 
+11:52:33.208 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Problem with the request&quot;,&quot;details&quot;:[]}
+11:52:33.208 [OkHttp http://localhost:54529/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (51-byte body)
+11:52:33.218 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - --&gt; GET http://localhost:54531/v2/bot/message/TOKEN/content http/1.1
+11:52:33.219 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - Authorization: Bearer token
+11:52:33.220 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - User-Agent: line-botsdk-java/null
+11:52:33.221 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - --&gt; END GET
+11:52:33.224 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - &lt;-- 429 Client Error http://localhost:54531/v2/bot/message/TOKEN/content (1ms)
+11:52:33.224 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - Content-Length: 64
+11:52:33.224 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - 
+11:52:33.224 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - {&quot;message&quot;:&quot;Exceeded the rate limit for API calls&quot;,&quot;details&quot;:[]}
+11:52:33.224 [OkHttp http://localhost:54531/...] INFO com.linecorp.bot.client.wire - &lt;-- END HTTP (64-byte body)
 </pre>
 </span>
 </div>
@@ -163,7 +163,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 3.5</a> at Oct 31, 2017 4:14:49 PM</p>
+<a href="http://www.gradle.org">Gradle 3.5</a> at Nov 1, 2017 11:52:33 AM</p>
 </div>
 </div>
 </body>
