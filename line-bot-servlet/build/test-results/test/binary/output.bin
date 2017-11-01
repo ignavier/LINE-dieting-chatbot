@@ -1,7 +1,6 @@
-<<<<<<< HEAD
-b11:52:41.437 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-b11:52:41.987 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-a11:52:42.013 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
+b16:54:45.730 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+b16:54:46.320 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+a16:54:46.339 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
   "events": [
     {
 7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
@@ -30,8 +29,8 @@
   ]
 }
 
-d11:52:42.179 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-a11:52:42.185 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
+d16:54:46.497 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+a16:54:46.501 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
   "events": [
     {
 7      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
@@ -60,66 +59,4 @@
   ]
 }
 
-	d11:52:42.197 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-=======
-a15:51:08.753 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-a15:51:09.047 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-`15:51:09.054 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
-  "events": [
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "message",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-	      },
-      "message": {
-        "id": "325708",
-        "type": "text",
-        "text": "Hello, world"
-      }
-    },
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "follow",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-      }
-    }
-  ]
-}
-
-c15:51:09.203 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-`15:51:09.208 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
-  "events": [
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "message",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-	      },
-      "message": {
-        "id": "325708",
-        "type": "text",
-        "text": "Hello, world"
-      }
-    },
-    {
-6      "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
-      "type": "follow",
-"      "timestamp": 1462629479859,
-      "source": {
-        "type": "user",
-6        "userId": "u206d25c2ea6bd87c17655609a1c37cb8"
-      }
-    }
-  ]
-}
-
-	c15:51:09.221 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+	d16:54:46.515 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null

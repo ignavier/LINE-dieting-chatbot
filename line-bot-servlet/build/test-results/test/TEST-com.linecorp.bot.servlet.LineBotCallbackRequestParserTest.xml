@@ -1,33 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:41" hostname="Lenovo-PC" time="1.18">
+<testsuite name="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:45" hostname="Lenovo-PC" time="1.257">
   <properties/>
-  <testcase name="testInvalidSignature2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.932"/>
-  <testcase name="testInvalidSignature" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.036"/>
-  <testcase name="testCallRequest" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.186"/>
-  <testcase name="testMissingHeader" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.002"/>
-  <testcase name="testNullRequest2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.005"/>
-  <testcase name="testCallRequest2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.01"/>
-  <testcase name="testMissingHeader2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.001"/>
-  <testcase name="testNullRequest" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.003"/>
-  <system-out><![CDATA[11:52:41.437 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-11:52:41.987 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-11:52:42.013 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
-=======
-<testsuite name="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:08" hostname="Ignaviers-MacBook-Pro.local" time="0.748">
-  <properties/>
-  <testcase name="testInvalidSignature2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.533"/>
-  <testcase name="testInvalidSignature" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.038"/>
-  <testcase name="testCallRequest" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.151"/>
+  <testcase name="testInvalidSignature2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.991"/>
+  <testcase name="testInvalidSignature" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.068"/>
+  <testcase name="testCallRequest" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.173"/>
   <testcase name="testMissingHeader" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.001"/>
-  <testcase name="testNullRequest2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.004"/>
+  <testcase name="testNullRequest2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.003"/>
   <testcase name="testCallRequest2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.012"/>
-  <testcase name="testMissingHeader2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.001"/>
+  <testcase name="testMissingHeader2" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.0"/>
   <testcase name="testNullRequest" classname="com.linecorp.bot.servlet.LineBotCallbackRequestParserTest" time="0.003"/>
-  <system-out><![CDATA[15:51:08.753 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-15:51:09.047 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
-15:51:09.054 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+  <system-out><![CDATA[16:54:45.730 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+16:54:46.320 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {}
+16:54:46.339 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
   "events": [
     {
       "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
@@ -55,13 +39,8 @@
   ]
 }
 
-<<<<<<< HEAD
-11:52:42.179 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-11:52:42.185 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
-=======
-15:51:09.203 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-15:51:09.208 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+16:54:46.497 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
+16:54:46.501 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: {
   "events": [
     {
       "replyToken": "nHuyWiB7yP5Zw52FIkcQobQuGDXCTA",
@@ -89,11 +68,7 @@
   ]
 }
 
-<<<<<<< HEAD
-11:52:42.197 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
-=======
-15:51:09.221 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+16:54:46.515 [Test worker] DEBUG com.linecorp.bot.servlet.LineBotCallbackRequestParser - got: null
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

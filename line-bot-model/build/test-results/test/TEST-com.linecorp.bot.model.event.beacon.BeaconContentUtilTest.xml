@@ -1,19 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:37" hostname="Lenovo-PC" time="0.004">
-  <properties/>
-  <testcase name="parseBytesOrNullTestForValidValue" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.001"/>
-  <testcase name="printHexBinaryForActualValue" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.001"/>
-  <testcase name="parseBytesOrNullTestForNull" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.001"/>
-=======
-<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:06" hostname="Ignaviers-MacBook-Pro.local" time="0.002">
+<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:38" hostname="Lenovo-PC" time="0.003">
   <properties/>
   <testcase name="parseBytesOrNullTestForValidValue" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.0"/>
   <testcase name="printHexBinaryForActualValue" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.0"/>
   <testcase name="parseBytesOrNullTestForNull" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.0"/>
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
-  <testcase name="printHexBinaryForNull" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.0"/>
-  <testcase name="parseBytesOrNullTestForInvalidValue" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.0"/>
+  <testcase name="printHexBinaryForNull" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.001"/>
+  <testcase name="parseBytesOrNullTestForInvalidValue" classname="com.linecorp.bot.model.event.beacon.BeaconContentUtilTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

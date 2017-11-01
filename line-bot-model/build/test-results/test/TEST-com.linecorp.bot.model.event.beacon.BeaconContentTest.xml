@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:37" hostname="Lenovo-PC" time="0.009">
+<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:38" hostname="Lenovo-PC" time="0.1">
   <properties/>
-  <testcase name="beaconContentEqualityTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.005"/>
+  <testcase name="beaconContentEqualityTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.095"/>
   <testcase name="beaconContentArrayProtectedTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.004"/>
-=======
-<testsuite name="com.linecorp.bot.model.event.beacon.BeaconContentTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:06" hostname="Ignaviers-MacBook-Pro.local" time="0.007">
-  <properties/>
-  <testcase name="beaconContentEqualityTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.004"/>
-  <testcase name="beaconContentArrayProtectedTest" classname="com.linecorp.bot.model.event.beacon.BeaconContentTest" time="0.003"/>
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

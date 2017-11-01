@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.model.event.MessageEventTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:37" hostname="Lenovo-PC" time="0.003">
-=======
-<testsuite name="com.linecorp.bot.model.event.MessageEventTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:06" hostname="Ignaviers-MacBook-Pro.local" time="0.003">
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+<testsuite name="com.linecorp.bot.model.event.MessageEventTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:39" hostname="Lenovo-PC" time="0.008">
   <properties/>
-  <testcase name="getMessageBinaryCompatibilityTest" classname="com.linecorp.bot.model.event.MessageEventTest" time="0.001"/>
-  <testcase name="constructor2ndParameterBinaryCompatibilityTest" classname="com.linecorp.bot.model.event.MessageEventTest" time="0.002"/>
+  <testcase name="getMessageBinaryCompatibilityTest" classname="com.linecorp.bot.model.event.MessageEventTest" time="0.002"/>
+  <testcase name="constructor2ndParameterBinaryCompatibilityTest" classname="com.linecorp.bot.model.event.MessageEventTest" time="0.006"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

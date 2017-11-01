@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.model.message.ImagemapMessageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:37" hostname="Lenovo-PC" time="0.01">
+<testsuite name="com.linecorp.bot.model.message.ImagemapMessageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:40" hostname="Lenovo-PC" time="0.01">
   <properties/>
   <testcase name="test" classname="com.linecorp.bot.model.message.ImagemapMessageTest" time="0.01"/>
-=======
-<testsuite name="com.linecorp.bot.model.message.ImagemapMessageTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:06" hostname="Ignaviers-MacBook-Pro.local" time="0.008">
-  <properties/>
-  <testcase name="test" classname="com.linecorp.bot.model.message.ImagemapMessageTest" time="0.008"/>
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

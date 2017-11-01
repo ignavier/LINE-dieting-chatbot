@@ -3,6 +3,8 @@
 */
 
 package com.example.bot.spring;
+import com.rivescript.RiveScript;
+import java.io.File;
 
 import com.example.bot.spring.DietbotController.DownloadedContent;
 
@@ -26,10 +28,17 @@ public class StateManager {
             new PostEatingState()
         };
 
+    // Rivescript object
+    RiveScript bot = new RiveScript();
+    
     /**
      * Default constructor for StateManager
      */
     public StateManager() {
+    	// Load rive files for Rivescript object
+    	File resourcesDirectory = new File("src/resources/rivescript/trigger.rive");
+    	bot.loadFile(resourcesDirectory.getAbsolutePath());
+    	bot.sortReplies();
     }
 
     /**
@@ -41,8 +50,9 @@ public class StateManager {
         String replyText = null;
         try{
             // Get the next state after current message
-            currentState = nextState(text);    // Check trigger
-            replyText = states[currentState].reply(text);
+        	replyText = bot.reply("user", text);
+            currentState = decodeState(bot.getUservar("user", "state"));    // Check trigger
+            
         } catch (Exception e) {    // Modify to custom exception TextNotRecognized later
             // Text is not recognized, does not modify current state
             replyText = "Your text is not recognized by us!";
@@ -78,44 +88,24 @@ public class StateManager {
     }
     
     /**
-     * Get the next state after inputting text if current state
-     * is standbyState
-     * @param text A String data type
-     * @return A int data type
-     */
-    public int nextStateFromStandby(String text) {
-        switch(text) {
-            case "CollectUserInfoState":  return 1;
-            case "ProvideInfoState":  return 2;
-            case "InputMenuState":  return 3;
-            case "PostEatingState":  return 5;
-            default: return currentState;
-            
-        }
-    }
-
-    /**
-     * Get the next state after inputting text if current state
-     * is one of state number {1, 2, 3, 5}
-     * @param text A String data type
-     * @return A int data type
-     */
-    public int nextStateToStandby(String text) {
-        switch(text) {
-            case "StandbyState":  return 0;
-            default: return currentState;
-        }
-    }
-
-    /**
      * Get the next state after inputting text
      * @param text A String data type
      * @return A int data type
      */
-    public int nextState(String text) {
-        switch(currentState) {
-            case STANDBY_STATE:  return nextStateFromStandby(text);
-            default: return nextStateToStandby(text);
+    public int decodeState(String text) {
+    	switch(text) {
+	    	case "standby":
+	    		return 0;
+	    	case "collect_user_info":
+	    		return 1;
+	    	case "input_menu":
+	    		return 3;
+	    	case "post_eating":
+	    		return 5;
+	    	case "provide_info":
+	    		return 2;
+	    	default:
+	    		return 4;
         }
     }
 }

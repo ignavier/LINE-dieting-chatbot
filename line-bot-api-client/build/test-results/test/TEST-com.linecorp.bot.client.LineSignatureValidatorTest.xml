@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.client.LineSignatureValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:33" hostname="Lenovo-PC" time="0.096">
+<testsuite name="com.linecorp.bot.client.LineSignatureValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:32" hostname="Lenovo-PC" time="0.088">
   <properties/>
-  <testcase name="validateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.089"/>
-  <testcase name="generateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.007"/>
-=======
-<testsuite name="com.linecorp.bot.client.LineSignatureValidatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:03" hostname="Ignaviers-MacBook-Pro.local" time="0.057">
-  <properties/>
-  <testcase name="validateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.049"/>
-  <testcase name="generateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.008"/>
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+  <testcase name="validateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.075"/>
+  <testcase name="generateSignature" classname="com.linecorp.bot.client.LineSignatureValidatorTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

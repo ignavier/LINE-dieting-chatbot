@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.client.CallbackAdaptorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:31" hostname="Lenovo-PC" time="0.576">
+<testsuite name="com.linecorp.bot.client.CallbackAdaptorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:30" hostname="Lenovo-PC" time="0.939">
   <properties/>
-  <testcase name="onResponseSuccessfullyTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.243"/>
-  <testcase name="onFailureTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.027"/>
-  <testcase name="onResponseWithErrorTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.305"/>
-=======
-<testsuite name="com.linecorp.bot.client.CallbackAdaptorTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:02" hostname="Ignaviers-MacBook-Pro.local" time="0.548">
-  <properties/>
-  <testcase name="onResponseSuccessfullyTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.221"/>
-  <testcase name="onFailureTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.032"/>
-  <testcase name="onResponseWithErrorTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.293"/>
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
+  <testcase name="onResponseSuccessfullyTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.485"/>
+  <testcase name="onFailureTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.044"/>
+  <testcase name="onResponseWithErrorTest" classname="com.linecorp.bot.client.CallbackAdaptorTest" time="0.41"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

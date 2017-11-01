@@ -1,36 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
-<testsuite name="com.linecorp.bot.model.event.CallbackRequestTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-11-01T03:52:37" hostname="Lenovo-PC" time="0.243">
+<testsuite name="com.linecorp.bot.model.event.CallbackRequestTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-11-01T08:54:38" hostname="Lenovo-PC" time="0.498">
   <properties/>
-  <testcase name="textTextUser" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.13"/>
-  <testcase name="testImage" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.007"/>
-  <testcase name="testLeave" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.009"/>
-  <testcase name="testFile" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.015"/>
-  <testcase name="testJoin" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.006"/>
-  <testcase name="textTextGroup" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.006"/>
-  <testcase name="testUnknown" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.008"/>
-  <testcase name="testBeaconWithDeviceMessage" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.013"/>
-  <testcase name="testUnfollow" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.007"/>
-  <testcase name="testBeacon" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.005"/>
-  <testcase name="testFollow" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.007"/>
-  <testcase name="testPostback" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.016"/>
-=======
-<testsuite name="com.linecorp.bot.model.event.CallbackRequestTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2017-11-01T07:51:06" hostname="Ignaviers-MacBook-Pro.local" time="0.222">
-  <properties/>
-  <testcase name="textTextUser" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.112"/>
-  <testcase name="testImage" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.008"/>
-  <testcase name="testLeave" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.01"/>
-  <testcase name="testFile" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.013"/>
-  <testcase name="testJoin" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.007"/>
-  <testcase name="textTextGroup" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.007"/>
-  <testcase name="testUnknown" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.008"/>
-  <testcase name="testBeaconWithDeviceMessage" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.012"/>
+  <testcase name="textTextUser" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.194"/>
+  <testcase name="testImage" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.01"/>
+  <testcase name="testLeave" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.041"/>
+  <testcase name="testFile" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.12"/>
+  <testcase name="testJoin" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.009"/>
+  <testcase name="textTextGroup" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.009"/>
+  <testcase name="testUnknown" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.015"/>
+  <testcase name="testBeaconWithDeviceMessage" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.025"/>
   <testcase name="testUnfollow" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.005"/>
-  <testcase name="testBeacon" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.006"/>
-  <testcase name="testFollow" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.005"/>
-  <testcase name="testPostback" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.017"/>
->>>>>>> 62e2cd5f49a66c63bf9f5eda34b412637cd1dcbb
-  <testcase name="testSticker" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.009"/>
+  <testcase name="testBeacon" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.01"/>
+  <testcase name="testFollow" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.006"/>
+  <testcase name="testPostback" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.037"/>
+  <testcase name="testSticker" classname="com.linecorp.bot.model.event.CallbackRequestTest" time="0.013"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
