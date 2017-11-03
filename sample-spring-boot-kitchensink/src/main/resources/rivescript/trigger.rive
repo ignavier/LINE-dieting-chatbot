@@ -1,48 +1,63 @@
-
-! local concat = space
+! local concat = newline
 
 > topic new_user
 
 	+ *
 	- Hi! I am your personal Dieting Chatbot!
         ^ First, I need to ask you a few questions about your physical information.
-        ^ What is your name?<set state=collect_user_info><set img_received=false><set url_received=false>{topic=collect_user_name}
+        ^ What is your name?<set state=collect_user_info> <set img_received=false> <set url_received=false> {topic=collect_user_name}
 
 < topic
 
 ///////////////////////////////////////standby
 
-> topic standby 
+> topic standby
+
+    // don't know what user said and tell them what can we do
 	+ *
 	- Sorry, I'm not sure how to respond to that.
-	- Sorry, I do not understand. Please try saying it in another way.
+    ^ Please tell me what you want to do :P
+    ^ * Input a food menu and get food recommendation
+    ^ * Record what you have eaten last meal
+    ^ * Update personal information
+    ^ * Ask for dieting history
 
-	// Do we need this?
-	+ [*] my id [*]
-	- Your ID is <id>.
-
-	// And this?
 	+ [*] google *
 	- Google results for "<star>": <a href="http://google.com/search?q=<star>">Click Here</a>
 
-	+ [*] (tweak|change|alter|update|modify) [*] (info|information|details|particulars)|(height|weight|age|gender|name|allergy|allergies) [*]
-	- Okay, I will now ask you a few questions to <star1> your <star2>. What is your name?
-		^ {topic=collect_user_name} <set state=collect_user_info>
+    // trigger to collect_user_info state
+    + [*] ((tweak|change|alter|update|modify|adjust)|(info|information|details|particulars|name|age|gender|height|weight|allergy|allergies)) [*]
+    - Do you want to update your personal information? {topic=collect_user_info_confirmation}
 
-	+ [*] ([eating] [*] restaurant|[help me] (look|check out) [*] menu|(recommend|recommendation|suggest|suggestion|decide|should|what to) [*] eat|have) [*]
-	- Please let me have a look at your menu. You can now either share me a photo or a url. 
-		^ {topic=input_menu} <set state=input_menu>
+    // trigger to input_menu state (possibly go to recommend state later)
+	+ [*] (input|eating|restaurant|help me|look|check out|menu|recommend|recommendation|suggest|suggestion|decide|should|what to eat) [*]
+	- Please let me have a look at your menu first. You can either take a photo, or share the menu url with me. {topic=input_menu} <set state=input_menu>
 
-	+ [*] (finished eating|ate|eaten|had (a|an|[my] @meals)) [*]
-	- Great! Please tell me what you ate.
-		^ {topic=post_eating} <set state=post_eating>
+    // trigger to record what the user ate
+    + [*] (ate|have eaten|has eaten|had eaten|record|last meal|finished|finish|@meals) [*]
+    - Please tell me what you ate. {topic=post_eating} <set state=post_eating>
 
-	+ [*] (what [did|had] i (had|eat|eaten) (yesterday|just now|not long ago)|what is my (fat|carbohydrate|sodium|vitamin) intake) [*]
-	- Please wait while I check your eating history.
-		^ {topic=provide_info} <set state=provide_info>
+// implement later
+//    // trigger to query dieting history
+//	+ [*] (what [did|had] i (had|eat|eaten) (yesterday|just now|not long ago)|what is my (fat|carbohydrate|sodium|vitamin) intake) [*]
+//	- Please wait while I check your eating history.
+//		^ {topic=provide_info} <set state=provide_info>
 
-	+ ([*] talk later|talk to you later)
+	+ [*] (talk later|see you|bye) [*]
 	- Okay see you later.
+< topic
+
+// still in standby state
+> topic collect_user_info_confirmation
+
+    + @yes [*]
+    - OK. What is your name? {topic=collect_user_age} <set state=collect_user_info>
+
+    + @no [*]
+    - OK. Tell me when you need help~~~~ {topic=standby}
+
+    + *
+    - {topic=standby}{@ <star>}
 < topic
 
 ///////////////////////////////////////collect_user_info
@@ -52,10 +67,10 @@
 > topic collect_user_name
 
     + (i am|my name is|this is) *
-    - <set name={formal}<star2>{/formal}>Is {formal}<star2>{/formal} your name? {topic=collect_user_name_confirmation}
+    - <set name={formal}<star2>{/formal}> Is {formal}<star2>{/formal} your name? {topic=collect_user_name_confirmation}
 
     + *
-    - <set name={formal}<star>{/formal}>Is {formal}<star>{/formal} your name? {topic=collect_user_name_confirmation}
+    - <set name={formal}<star>{/formal}> Is {formal}<star>{/formal} your name? {topic=collect_user_name_confirmation}
 
 < topic
 > topic collect_user_name_confirmation
@@ -121,7 +136,7 @@
 > topic collect_user_weight_confirmation
 
     + @yes [*]
-    - Alright, then what is your height?{topic=collect_user_height}
+    - Alright, then what is your height in cm?{topic=collect_user_height}
 
     + @no [*]
     - Can you enter your weight again? Please input an integer.
@@ -147,7 +162,7 @@
     - Great. Are you allergic to milk? (Yes/No){topic=collect_user_allergy_milk}
 
     + @no [*]
-    - Can you enter your height again? Please input an integer. {topic=collect_user_height}
+    - Can you enter your height (in cm) again? Please input an integer. {topic=collect_user_height}
 
     + *
     - I don't understand. Is your height <get height>cm?
@@ -224,7 +239,7 @@
 
 
 > topic input_menu 
-	+ ([*] talk later|talk to you later)
+	+ [*] (talk [to you] later|leave) [*]
 	- Okay see you later.
 		^ {topic=standby} <set state=standby>
     
@@ -236,30 +251,34 @@
 < topic
 
 
+
 > topic post_eating
-	+ ([*] talk later|talk to you later)
+	+ talk later
 	- Okay see you later.
-		^ {topic=standby} <set state=standby>
+	^ {topic=standby} <set state=standby>
 
 	+ * 
 	- post_eating
 < topic
 
 
-> topic provide_info
-	+ ([*] talk later|talk to you later)
-	- Okay see you later.
-		^ {topic=standby} <set state=standby>
-    
-	+ * 
-	- provide_info
-< topic
+
+//> topic provide_info
+//    + [*] (talk [to you] later|leave) [*]
+//    - Okay see you later.
+//		^ {topic=standby} <set state=standby>
+//    
+//	+ *
+//	- provide_info
+//< topic
+
 
 
 > topic recommend
 
-	+ ([*] talk later|talk to you later)
-	- Okay see you later.
+    + [*] (talk [to you] later|leave) [*]
+    - Okay see you later.
 		^ {topic=standby} <set state=standby>
+
 < topic
 
